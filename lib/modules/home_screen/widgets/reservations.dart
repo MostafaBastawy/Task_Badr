@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:task_badr/modules/home_screen/widgets/reservation_item.dart';
 import 'package:task_badr/utilis/styles/colors_manager.dart';
 
 class Reservations extends StatelessWidget {
@@ -37,7 +38,8 @@ class Reservations extends StatelessWidget {
           child: ListView.separated(
             scrollDirection: Axis.horizontal,
             shrinkWrap: true,
-            itemBuilder: (BuildContext context, int index) => Container(),
+            itemBuilder: (BuildContext context, int index) =>
+                const ReservationItem(),
             separatorBuilder: (BuildContext context, int index) =>
                 SizedBox(width: 16.w),
             itemCount: 10,

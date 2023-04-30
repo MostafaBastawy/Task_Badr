@@ -44,16 +44,16 @@ class RevisionsWidget extends StatelessWidget {
                 children: [
                   Image.asset(
                     'assets/images/home_screen/profile1.png',
-                    width: 32.w,
-                    height: 32.h,
+                    width: 32,
+                    height: 32,
                     fit: BoxFit.fill,
                   ),
                   Padding(
                     padding: EdgeInsetsDirectional.only(start: 20.w),
                     child: Image.asset(
                       'assets/images/home_screen/profile2.png',
-                      width: 32.w,
-                      height: 32.h,
+                      width: 32,
+                      height: 32,
                       fit: BoxFit.fill,
                     ),
                   ),
@@ -61,8 +61,8 @@ class RevisionsWidget extends StatelessWidget {
                     padding: EdgeInsetsDirectional.only(start: 40.w),
                     child: Image.asset(
                       'assets/images/home_screen/profile3.png',
-                      width: 32.w,
-                      height: 32.h,
+                      width: 32,
+                      height: 32,
                       fit: BoxFit.fill,
                     ),
                   ),

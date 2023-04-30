@@ -44,6 +44,8 @@ class HomeScreen extends StatelessWidget {
                   ),
                   SizedBox(height: 32.h),
                   const Reservations(),
+                  SizedBox(height: 28.h),
+                  SizedBox(height: 100.h),
                 ],
               ),
             ),

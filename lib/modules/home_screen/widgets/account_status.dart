@@ -24,8 +24,8 @@ class AccountStatus extends StatelessWidget {
         children: [
           Image.asset(
             'assets/images/home_screen/profile.png',
-            width: 43.w,
-            height: 45.h,
+            width: 43,
+            height: 45,
           ),
           SizedBox(width: 10.w),
           Expanded(
