@@ -5,9 +5,8 @@ class ProfileScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: null,
-      extendBodyBehindAppBar: true,
+    return Column(
+      children: [],
     );
   }
 }

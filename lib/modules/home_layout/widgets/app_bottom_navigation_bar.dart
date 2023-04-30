@@ -15,112 +15,110 @@ class AppBottomNavigationBar extends StatelessWidget {
   Widget build(BuildContext context) {
     HomeLayoutCubit cubit = context.read<HomeLayoutCubit>();
     return BlocBuilder<HomeLayoutCubit, HomeLayoutStates>(
-      builder: (BuildContext context, state) => ClipRRect(
-        borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(20.r),
-          topRight: Radius.circular(20.r),
+      builder: (BuildContext context, state) => Container(
+        width: 375.w,
+        height: 85.h,
+        decoration: BoxDecoration(
+          color: ColorsManager.fffffff,
+          borderRadius: BorderRadius.only(
+            topRight: Radius.circular(30.r),
+            topLeft: Radius.circular(30.r),
+          ),
+          boxShadow: ShadowsManager.shadow1,
         ),
-        child: Container(
-          width: 375.w,
-          height: 85.h,
-          decoration: BoxDecoration(
-            color: ColorsManager.fffffff,
-            boxShadow: ShadowsManager.shadow1,
-          ),
-          child: SalomonBottomBar(
-            currentIndex: cubit.currentIndex,
-            backgroundColor: Colors.transparent,
-            unselectedItemColor: ColorsManager.f999999,
-            selectedItemColor: ColorsManager.f615198,
-            onTap: (index) {
-              cubit.changeScreenBody(index: index);
-            },
-            items: [
-              /// Home
-              SalomonBottomBarItem(
-                icon: SvgPicture.asset(
-                  'assets/images/bottom_nav_bar/home.svg',
-                  colorFilter: ColorFilter.mode(
-                    cubit.currentIndex == 0
-                        ? ColorsManager.f615198
-                        : ColorsManager.f999999,
-                    BlendMode.srcIn,
-                  ),
+        child: SalomonBottomBar(
+          currentIndex: cubit.currentIndex,
+          backgroundColor: Colors.transparent,
+          unselectedItemColor: ColorsManager.f999999,
+          selectedItemColor: ColorsManager.f615198,
+          onTap: (index) {
+            cubit.changeScreenBody(index: index);
+          },
+          items: [
+            /// Home
+            SalomonBottomBarItem(
+              icon: SvgPicture.asset(
+                'assets/images/bottom_nav_bar/home.svg',
+                colorFilter: ColorFilter.mode(
+                  cubit.currentIndex == 0
+                      ? ColorsManager.f615198
+                      : ColorsManager.f999999,
+                  BlendMode.srcIn,
                 ),
-                title: Text(
-                  "الرئيسية",
-                  style: TextStyle(
-                    fontSize: 15.sp,
-                    fontWeight: FontWeight.w700,
-                  ),
-                ),
-                selectedColor: ColorsManager.f615198,
               ),
+              title: Text(
+                "الرئيسية",
+                style: TextStyle(
+                  fontSize: 15.sp,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              selectedColor: ColorsManager.f615198,
+            ),
 
-              /// bookings
-              SalomonBottomBarItem(
-                icon: SvgPicture.asset(
-                  'assets/images/bottom_nav_bar/calendar.svg',
-                  colorFilter: ColorFilter.mode(
-                    cubit.currentIndex == 1
-                        ? ColorsManager.f615198
-                        : ColorsManager.f999999,
-                    BlendMode.srcIn,
-                  ),
+            /// bookings
+            SalomonBottomBarItem(
+              icon: SvgPicture.asset(
+                'assets/images/bottom_nav_bar/calendar.svg',
+                colorFilter: ColorFilter.mode(
+                  cubit.currentIndex == 1
+                      ? ColorsManager.f615198
+                      : ColorsManager.f999999,
+                  BlendMode.srcIn,
                 ),
-                title: Text(
-                  "الحجوزات",
-                  style: TextStyle(
-                    fontSize: 15.sp,
-                    fontWeight: FontWeight.w700,
-                  ),
-                ),
-                selectedColor: ColorsManager.f615198,
               ),
+              title: Text(
+                "الحجوزات",
+                style: TextStyle(
+                  fontSize: 15.sp,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              selectedColor: ColorsManager.f615198,
+            ),
 
-              /// Chats
-              SalomonBottomBarItem(
-                icon: SvgPicture.asset(
-                  'assets/images/bottom_nav_bar/chat.svg',
-                  colorFilter: ColorFilter.mode(
-                    cubit.currentIndex == 2
-                        ? ColorsManager.f615198
-                        : ColorsManager.f999999,
-                    BlendMode.srcIn,
-                  ),
+            /// Chats
+            SalomonBottomBarItem(
+              icon: SvgPicture.asset(
+                'assets/images/bottom_nav_bar/chat.svg',
+                colorFilter: ColorFilter.mode(
+                  cubit.currentIndex == 2
+                      ? ColorsManager.f615198
+                      : ColorsManager.f999999,
+                  BlendMode.srcIn,
                 ),
-                title: Text(
-                  "المحادثات",
-                  style: TextStyle(
-                    fontSize: 15.sp,
-                    fontWeight: FontWeight.w700,
-                  ),
-                ),
-                selectedColor: ColorsManager.f615198,
               ),
+              title: Text(
+                "المحادثات",
+                style: TextStyle(
+                  fontSize: 15.sp,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              selectedColor: ColorsManager.f615198,
+            ),
 
-              /// Profile
-              SalomonBottomBarItem(
-                icon: SvgPicture.asset(
-                  'assets/images/bottom_nav_bar/profile.svg',
-                  colorFilter: ColorFilter.mode(
-                    cubit.currentIndex == 3
-                        ? ColorsManager.f615198
-                        : ColorsManager.f999999,
-                    BlendMode.srcIn,
-                  ),
+            /// Profile
+            SalomonBottomBarItem(
+              icon: SvgPicture.asset(
+                'assets/images/bottom_nav_bar/profile.svg',
+                colorFilter: ColorFilter.mode(
+                  cubit.currentIndex == 3
+                      ? ColorsManager.f615198
+                      : ColorsManager.f999999,
+                  BlendMode.srcIn,
                 ),
-                title: Text(
-                  "حسابي",
-                  style: TextStyle(
-                    fontSize: 15.sp,
-                    fontWeight: FontWeight.w700,
-                  ),
-                ),
-                selectedColor: ColorsManager.f615198,
               ),
-            ],
-          ),
+              title: Text(
+                "حسابي",
+                style: TextStyle(
+                  fontSize: 15.sp,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              selectedColor: ColorsManager.f615198,
+            ),
+          ],
         ),
       ),
     );
