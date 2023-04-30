@@ -20,7 +20,7 @@ class TaskApp extends StatelessWidget {
           builder: (context, widget) {
             ScreenUtil.init(
               context,
-              designSize: const Size(428, 926),
+              designSize: const Size(375, 892),
               minTextAdapt: true,
               splitScreenMode: true,
             );
