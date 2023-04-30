@@ -16,13 +16,14 @@ class HomeScreen extends StatelessWidget {
     return Column(
       children: [
         const HomeAppBar(),
-        SizedBox(height: 32.h),
+        SizedBox(height: 20.h),
         Expanded(
           child: SingleChildScrollView(
             child: Padding(
               padding: EdgeInsets.symmetric(horizontal: 20.w),
               child: Column(
                 children: [
+                  SizedBox(height: 15.h),
                   const AccountStatus(),
                   SizedBox(height: 21.h),
                   const AddNewService(),
