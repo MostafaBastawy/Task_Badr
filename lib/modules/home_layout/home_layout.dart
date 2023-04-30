@@ -14,6 +14,7 @@ class HomeLayout extends StatelessWidget {
     return BlocBuilder<HomeLayoutCubit, HomeLayoutStates>(
       builder: (BuildContext context, state) => Scaffold(
         extendBodyBehindAppBar: true,
+        extendBody: true,
         appBar: null,
         body: Stack(
           children: [

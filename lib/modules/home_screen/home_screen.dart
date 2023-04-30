@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:task_badr/modules/home_screen/widgets/home_app_bar.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -9,13 +9,7 @@ class HomeScreen extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: [
-          Container(
-            width: 375.w,
-            height: 1000.h,
-            decoration: BoxDecoration(
-              color: Colors.white,
-            ),
-          )
+          const HomeAppBar(),
         ],
       ),
     );

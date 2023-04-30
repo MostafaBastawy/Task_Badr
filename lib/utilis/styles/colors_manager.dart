@@ -5,4 +5,5 @@ class ColorsManager {
   static const Color f999999 = Color(0xFF999999);
   static const Color f615198 = Color(0xFF615198);
   static const Color f000000 = Color(0xFF000000);
+  static const Color fF6F6F6 = Color(0xFFF6F6F6);
 }
