@@ -20,7 +20,7 @@ void main() async {
       ],
       path:
           'assets/translations', // <-- change the path of the translation files
-      fallbackLocale: const Locale('en'),
+      fallbackLocale: const Locale('ar'),
       assetLoader: const CodegenLoader(),
 
       child: const TaskApp(),
