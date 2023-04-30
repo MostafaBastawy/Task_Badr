@@ -44,8 +44,8 @@ class TaskApp extends StatelessWidget {
           home: const AnnotatedRegion<SystemUiOverlayStyle>(
             value: SystemUiOverlayStyle(
               statusBarColor: Colors.transparent,
-              statusBarBrightness: Brightness.light,
-              statusBarIconBrightness: Brightness.dark,
+              statusBarBrightness: Brightness.dark,
+              statusBarIconBrightness: Brightness.light,
               systemStatusBarContrastEnforced: true,
             ),
             child: HomeLayout(),

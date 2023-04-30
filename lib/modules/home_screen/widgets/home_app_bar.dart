@@ -31,24 +31,27 @@ class HomeAppBar extends StatelessWidget {
         ),
         Positioned(
           bottom: 30.h,
-          right: 20.w,
+          right: 30.w,
           left: 20.w,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Container(
-                width: 32.w,
-                height: 32.h,
-                decoration: BoxDecoration(
-                  color: ColorsManager.fF6F6F6.withOpacity(0.31),
-                  borderRadius: BorderRadius.circular(8.r),
-                ),
-                child: Center(
-                  child: SvgPicture.asset(
-                    'assets/images/home_screen/menu.svg',
-                    width: 24.w,
-                    height: 24.h,
+              InkWell(
+                onTap: () {},
+                child: Container(
+                  width: 32.w,
+                  height: 32.h,
+                  decoration: BoxDecoration(
+                    color: ColorsManager.fF6F6F6.withOpacity(0.31),
+                    borderRadius: BorderRadius.circular(8.r),
+                  ),
+                  child: Center(
+                    child: SvgPicture.asset(
+                      'assets/images/home_screen/menu.svg',
+                      width: 24.w,
+                      height: 24.h,
+                    ),
                   ),
                 ),
               ),
@@ -64,18 +67,21 @@ class HomeAppBar extends StatelessWidget {
                 ),
               ),
               SizedBox(width: 20.w),
-              Container(
-                width: 32.w,
-                height: 32.h,
-                decoration: BoxDecoration(
-                  color: ColorsManager.fF6F6F6.withOpacity(0.31),
-                  borderRadius: BorderRadius.circular(8.r),
-                ),
-                child: Center(
-                  child: SvgPicture.asset(
-                    'assets/images/home_screen/bell.svg',
-                    width: 24.w,
-                    height: 24.h,
+              InkWell(
+                onTap: () {},
+                child: Container(
+                  width: 32.w,
+                  height: 32.h,
+                  decoration: BoxDecoration(
+                    color: ColorsManager.fF6F6F6.withOpacity(0.31),
+                    borderRadius: BorderRadius.circular(8.r),
+                  ),
+                  child: Center(
+                    child: SvgPicture.asset(
+                      'assets/images/home_screen/bell.svg',
+                      width: 24.w,
+                      height: 24.h,
+                    ),
                   ),
                 ),
               ),
