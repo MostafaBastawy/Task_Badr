@@ -4,6 +4,7 @@ import 'package:task_badr/modules/home_screen/widgets/account_status.dart';
 import 'package:task_badr/modules/home_screen/widgets/add_new_service.dart';
 import 'package:task_badr/modules/home_screen/widgets/home_app_bar.dart';
 import 'package:task_badr/modules/home_screen/widgets/our_services.dart';
+import 'package:task_badr/modules/home_screen/widgets/reservation_chart.dart';
 import 'package:task_badr/modules/home_screen/widgets/reservations.dart';
 import 'package:task_badr/modules/home_screen/widgets/revisions_widget.dart';
 import 'package:task_badr/modules/home_screen/widgets/wallet_widget.dart';
@@ -45,6 +46,7 @@ class HomeScreen extends StatelessWidget {
                   SizedBox(height: 32.h),
                   const Reservations(),
                   SizedBox(height: 28.h),
+                  const ReservationChart(),
                   SizedBox(height: 100.h),
                 ],
               ),
