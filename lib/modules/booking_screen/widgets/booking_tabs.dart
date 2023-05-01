@@ -45,6 +45,26 @@ class _BookingTabsState extends State<BookingTabs> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
+                    if (index == 0) ...[
+                      Container(
+                        padding: const EdgeInsets.all(5),
+                        decoration: const BoxDecoration(
+                          color: ColorsManager.fFF8762,
+                          shape: BoxShape.circle,
+                        ),
+                        child: Center(
+                          child: Text(
+                            '12',
+                            style: TextStyle(
+                              color: ColorsManager.f000000,
+                              fontSize: 12.sp,
+                              fontWeight: FontWeight.w400,
+                            ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(width: 8.w),
+                    ],
                     Text(
                       tabs[index],
                       style: TextStyle(

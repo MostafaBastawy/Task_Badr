@@ -147,8 +147,8 @@ class BookingItem extends StatelessWidget {
                     ),
                     SizedBox(width: 8.w),
                     InkWell(
-                      onTap: () {
-                        showModalBottomSheet(
+                      onTap: () async {
+                        await showModalBottomSheet(
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.only(
                               topLeft: Radius.circular(16.r),
@@ -160,6 +160,12 @@ class BookingItem extends StatelessWidget {
                           context: context,
                           builder: (BuildContext context) =>
                               const RescheduleBottomSheet(),
+                        ).then(
+                          (value) async {
+                            await Future.delayed(
+                                const Duration(milliseconds: 500));
+                            onTap();
+                          },
                         );
                       },
                       child: Text(
