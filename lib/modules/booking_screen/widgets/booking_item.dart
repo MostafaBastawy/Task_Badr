@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:task_badr/modules/booking_screen/widgets/reschecule_bottom_sheet.dart';
 import 'package:task_badr/utilis/styles/colors_manager.dart';
 
 class BookingItem extends StatelessWidget {
@@ -115,12 +116,15 @@ class BookingItem extends StatelessWidget {
                 height: 20.h,
               ),
               SizedBox(width: 8.w),
-              Text(
-                'قبول',
-                style: TextStyle(
-                  color: ColorsManager.f3EBF60,
-                  fontSize: 12.sp,
-                  fontWeight: FontWeight.w400,
+              InkWell(
+                onTap: () {},
+                child: Text(
+                  'قبول',
+                  style: TextStyle(
+                    color: ColorsManager.f3EBF60,
+                    fontSize: 12.sp,
+                    fontWeight: FontWeight.w400,
+                  ),
                 ),
               ),
               SizedBox(width: 63.w),
@@ -130,12 +134,29 @@ class BookingItem extends StatelessWidget {
                 height: 20.h,
               ),
               SizedBox(width: 8.w),
-              Text(
-                'طلب إعادة جدولة',
-                style: TextStyle(
-                  color: ColorsManager.fEA4E2C,
-                  fontSize: 12.sp,
-                  fontWeight: FontWeight.w400,
+              InkWell(
+                onTap: () {
+                  showModalBottomSheet(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(16.r),
+                        topRight: Radius.circular(16.r),
+                      ),
+                    ),
+                    elevation: 0,
+                    // isScrollControlled: true,
+                    context: context,
+                    builder: (BuildContext context) =>
+                        const RescheduleBottomSheet(),
+                  );
+                },
+                child: Text(
+                  'طلب إعادة جدولة',
+                  style: TextStyle(
+                    color: ColorsManager.fEA4E2C,
+                    fontSize: 12.sp,
+                    fontWeight: FontWeight.w400,
+                  ),
                 ),
               ),
             ],
