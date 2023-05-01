@@ -10,4 +10,12 @@ class ShadowsManager {
       spreadRadius: 0,
     ),
   ];
+  static final shadow2 = [
+    BoxShadow(
+      color: ColorsManager.f323247.withOpacity(0.2),
+      offset: const Offset(0, 2),
+      blurRadius: 4,
+      spreadRadius: 0,
+    ),
+  ];
 }
