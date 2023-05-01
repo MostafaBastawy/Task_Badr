@@ -52,6 +52,9 @@ class ReservationChart extends StatelessWidget {
           ],
         ),
         SizedBox(height: 25.h),
+        SvgPicture.asset(
+          'assets/images/home_screen/chart.svg',
+        ),
       ],
     );
   }
