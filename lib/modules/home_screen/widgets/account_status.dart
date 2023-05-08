@@ -57,7 +57,7 @@ class AccountStatus extends StatelessWidget {
             builder: (context, state) {
               return Container(
                 width: 55.w,
-                height: 35.h,
+                height: 30.h,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20.r),
                   boxShadow: ShadowsManager.shadow3,
@@ -68,6 +68,7 @@ class AccountStatus extends StatelessWidget {
                   activeColor: ColorsManager.fffffff,
                   inactiveColor: ColorsManager.fffffff,
                   activeToggleColor: ColorsManager.f907DD2,
+                  inactiveToggleColor: ColorsManager.f999999,
                   toggleColor: ColorsManager.f907DD2,
                   value: context.read<HomeCubit>().accountStatus,
                   onToggle: (bool value) {
