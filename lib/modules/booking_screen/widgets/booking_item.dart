@@ -125,7 +125,8 @@ class BookingItem extends StatelessWidget {
                     InkWell(
                       onTap: () => onTap(),
                       child: Padding(
-                        padding: const EdgeInsets.all(10),
+                        padding: EdgeInsets.symmetric(
+                            vertical: 10.h, horizontal: 20.w),
                         child: Row(
                           children: [
                             SvgPicture.asset(
@@ -146,7 +147,7 @@ class BookingItem extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SizedBox(width: 43.w),
+                    SizedBox(width: 23.w),
                     InkWell(
                       onTap: () async {
                         await showModalBottomSheet(
@@ -170,7 +171,8 @@ class BookingItem extends StatelessWidget {
                         );
                       },
                       child: Padding(
-                        padding: const EdgeInsets.all(10),
+                        padding: EdgeInsets.symmetric(
+                            vertical: 10.h, horizontal: 20.w),
                         child: Row(
                           children: [
                             SvgPicture.asset(
