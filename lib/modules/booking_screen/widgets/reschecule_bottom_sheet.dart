@@ -139,6 +139,18 @@ class RescheduleBottomSheet extends StatelessWidget {
                   showTimePicker(
                     context: context,
                     initialTime: TimeOfDay.now(),
+                    builder: (BuildContext context, Widget? child) => Theme(
+                      data: Theme.of(context).copyWith(
+                        dialogTheme: const DialogTheme(
+                            shape: RoundedRectangleBorder(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(16)))),
+                        colorScheme: const ColorScheme.light(
+                          primary: ColorsManager.f615198,
+                        ),
+                      ),
+                      child: child!,
+                    ),
                   );
                 },
                 child: SizedBox(
