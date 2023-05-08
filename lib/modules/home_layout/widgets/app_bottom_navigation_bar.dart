@@ -17,7 +17,6 @@ class AppBottomNavigationBar extends StatelessWidget {
     return BlocBuilder<HomeLayoutCubit, HomeLayoutStates>(
       builder: (BuildContext context, state) => Container(
         width: 375.w,
-        height: 85.h,
         decoration: BoxDecoration(
           color: ColorsManager.fffffff,
           borderRadius: BorderRadius.only(
@@ -49,7 +48,7 @@ class AppBottomNavigationBar extends StatelessWidget {
               title: Text(
                 "الرئيسية",
                 style: TextStyle(
-                  fontSize: 15.sp,
+                  fontSize: 17.sp,
                   fontWeight: FontWeight.w700,
                 ),
               ),
@@ -70,7 +69,7 @@ class AppBottomNavigationBar extends StatelessWidget {
               title: Text(
                 "الحجوزات",
                 style: TextStyle(
-                  fontSize: 15.sp,
+                  fontSize: 17.sp,
                   fontWeight: FontWeight.w700,
                 ),
               ),
@@ -91,7 +90,7 @@ class AppBottomNavigationBar extends StatelessWidget {
               title: Text(
                 "المحادثات",
                 style: TextStyle(
-                  fontSize: 15.sp,
+                  fontSize: 17.sp,
                   fontWeight: FontWeight.w700,
                 ),
               ),
@@ -112,7 +111,7 @@ class AppBottomNavigationBar extends StatelessWidget {
               title: Text(
                 "حسابي",
                 style: TextStyle(
-                  fontSize: 15.sp,
+                  fontSize: 17.sp,
                   fontWeight: FontWeight.w700,
                 ),
               ),
