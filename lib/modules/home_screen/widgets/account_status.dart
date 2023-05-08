@@ -57,7 +57,7 @@ class AccountStatus extends StatelessWidget {
             builder: (context, state) {
               return Container(
                 width: 55.w,
-                height: 30.h,
+                height: 35.h,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20.r),
                   boxShadow: ShadowsManager.shadow3,
