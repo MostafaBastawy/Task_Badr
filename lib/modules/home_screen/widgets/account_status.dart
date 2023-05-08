@@ -56,7 +56,7 @@ class AccountStatus extends StatelessWidget {
           BlocBuilder<HomeCubit, HomeStates>(
             builder: (context, state) {
               return Container(
-                width: 60.w,
+                width: 55.w,
                 height: 35.h,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20.r),
