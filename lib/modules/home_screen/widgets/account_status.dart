@@ -56,16 +56,15 @@ class AccountStatus extends StatelessWidget {
           BlocBuilder<HomeCubit, HomeStates>(
             builder: (context, state) {
               return Container(
-                width: 50.w,
-                height: 30.h,
+                width: 60.w,
+                height: 35.h,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20.r),
-                  boxShadow: ShadowsManager.shadow1,
+                  boxShadow: ShadowsManager.shadow3,
                 ),
                 child: FlutterSwitch(
-                  width: 50.w,
-                  height: 30.h,
-                  toggleSize: 15,
+                  toggleSize: 24,
+                  padding: 2,
                   activeColor: ColorsManager.fffffff,
                   inactiveColor: ColorsManager.fffffff,
                   activeToggleColor: ColorsManager.f907DD2,
