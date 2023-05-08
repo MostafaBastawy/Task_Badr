@@ -117,35 +117,36 @@ class BookingItem extends StatelessWidget {
                   height: 1.h,
                   color: ColorsManager.fE4E4E4,
                 ),
-                SizedBox(height: 13.h),
+                SizedBox(height: 5.h),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    SvgPicture.asset(
-                      'assets/images/home_screen/accept.svg',
-                      width: 20.w,
-                      height: 20.h,
-                    ),
-                    SizedBox(width: 8.w),
                     InkWell(
                       onTap: () => onTap(),
-                      child: Text(
-                        'قبول',
-                        style: TextStyle(
-                          color: ColorsManager.f3EBF60,
-                          fontSize: 12.sp,
-                          fontWeight: FontWeight.w400,
+                      child: Padding(
+                        padding: const EdgeInsets.all(10),
+                        child: Row(
+                          children: [
+                            SvgPicture.asset(
+                              'assets/images/home_screen/accept.svg',
+                              width: 20.w,
+                              height: 20.h,
+                            ),
+                            SizedBox(width: 8.w),
+                            Text(
+                              'قبول',
+                              style: TextStyle(
+                                color: ColorsManager.f3EBF60,
+                                fontSize: 12.sp,
+                                fontWeight: FontWeight.w400,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ),
-                    SizedBox(width: 63.w),
-                    SvgPicture.asset(
-                      'assets/images/home_screen/reject.svg',
-                      width: 20.w,
-                      height: 20.h,
-                    ),
-                    SizedBox(width: 8.w),
+                    SizedBox(width: 43.w),
                     InkWell(
                       onTap: () async {
                         await showModalBottomSheet(
@@ -168,18 +169,31 @@ class BookingItem extends StatelessWidget {
                           },
                         );
                       },
-                      child: Text(
-                        'طلب إعادة جدولة',
-                        style: TextStyle(
-                          color: ColorsManager.fEA4E2C,
-                          fontSize: 12.sp,
-                          fontWeight: FontWeight.w400,
+                      child: Padding(
+                        padding: const EdgeInsets.all(10),
+                        child: Row(
+                          children: [
+                            SvgPicture.asset(
+                              'assets/images/home_screen/reject.svg',
+                              width: 20.w,
+                              height: 20.h,
+                            ),
+                            SizedBox(width: 8.w),
+                            Text(
+                              'طلب إعادة جدولة',
+                              style: TextStyle(
+                                color: ColorsManager.fEA4E2C,
+                                fontSize: 12.sp,
+                                fontWeight: FontWeight.w400,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ),
                   ],
                 ),
-                SizedBox(height: 13.h),
+                SizedBox(height: 5.h),
               ],
             ),
           ),
